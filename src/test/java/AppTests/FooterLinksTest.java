@@ -21,7 +21,7 @@ public class FooterLinksTest extends BaseTest{
         Assert.assertTrue("Nije otvoren Twitter tab", expectedURL.equals(actualURL));
         driver.close();
         driver.switchTo().window(newTab.get(0));
-        Assert.assertTrue("Homepage nije ucitan", homePage.neuspesnoLogovanje());
+        Assert.assertTrue("Homepage nije ucitan", homePage.homePageElementsPresent());
         String homePageUrl="https://www.saucedemo.com/inventory.html";
         System.out.println(driver.getCurrentUrl());
         Assert.assertTrue("Nismo na pocetnoj strani", driver.getCurrentUrl().equals(homePageUrl));
@@ -42,7 +42,7 @@ public class FooterLinksTest extends BaseTest{
         Assert.assertTrue("Nije otvoren Twitter tab", expectedURl.equals(actualURL));
         driver.close();
         driver.switchTo().window(newTab.get(0));
-        Assert.assertTrue("Homepage nije ucitan", homePage.neuspesnoLogovanje());
+        Assert.assertTrue("Homepage nije ucitan", homePage.homePageElementsPresent());
         String homePageUrl="https://www.saucedemo.com/inventory.html";
         System.out.println(driver.getCurrentUrl());
         Assert.assertTrue("Nismo na pocetnoj strani", driver.getCurrentUrl().equals(homePageUrl));
@@ -63,7 +63,7 @@ public class FooterLinksTest extends BaseTest{
         Assert.assertTrue("Nije otvoren linkedIn tab", expectedURl.equals(actualURL));
         driver.close();
         driver.switchTo().window(newTab.get(0));
-        Assert.assertTrue("Homepage nije ucitan", homePage.neuspesnoLogovanje());
+        Assert.assertTrue("Homepage nije ucitan", homePage.homePageElementsPresent());
         String homePageUrl="https://www.saucedemo.com/inventory.html";
         System.out.println(driver.getCurrentUrl());
         Assert.assertTrue("Nismo na pocetnoj strani", driver.getCurrentUrl().equals(homePageUrl));

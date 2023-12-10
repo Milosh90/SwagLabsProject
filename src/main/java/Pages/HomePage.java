@@ -32,7 +32,7 @@ public class HomePage {
    public boolean prisutnoJeDugmeAddToCart(){
     return driver.findElement(backPack).isDisplayed();
     }
-    public boolean neuspesnoLogovanje(){
+    public boolean homePageElementsPresent(){
         if (driver.findElement(fotografijeNaPocetnojStrani).isDisplayed() && driver.findElement(backPack).isDisplayed()){
             return true;
     } else

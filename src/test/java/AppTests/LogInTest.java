@@ -10,7 +10,7 @@ public class LogInTest extends BaseTest {
         logInPage.uspesnoLogovanje();
         Assert.assertTrue("logovanje nije bilo uspesno", homePage.prisutnaJeFotografijaNaPocetnojStranici());
         Assert.assertTrue("Logovanje nije bilo uspesno", homePage.prisutnoJeDugmeAddToCart());
-        Assert.assertTrue("Neuspesno logovanje ", homePage.neuspesnoLogovanje());
+        Assert.assertTrue("Neuspesno logovanje ", homePage.homePageElementsPresent());
     }
 
     @Test
